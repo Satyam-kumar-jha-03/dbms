@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-hospital"></i>
+                <span>HospitalMS</span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="pages/doctors.html"><i class="fas fa-user-md"></i> Doctors</a></li>
+                    <li><a href="pages/patients.html"><i class="fas fa-procedures"></i> Patients</a></li>
+                    <li><a href="pages/hospitals.html"><i class="fas fa-hospital-alt"></i> Hospitals</a></li>
+                    <li><a href="pages/records.html"><i class="fas fa-file-medical"></i> Medical Records</a></li>
+                    <li><a href="pages/relatives.html"><i class="fas fa-users"></i> Relatives</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile">
+                        <img src="images/avatar.jpg" alt="User Avatar">
+                        <span>Admin</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-cards">
+                <div class="card">
+                    <div class="card-icon bg-blue">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Doctors</h3>
+                        <h2 id="doctor-count">0</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-green">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Patients</h3>
+                        <h2 id="patient-count">0</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-orange">
+                        <i class="fas fa-hospital-alt"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Hospitals</h3>
+                        <h2 id="hospital-count">0</h2>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon bg-purple">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Records</h3>
+                        <h2 id="record-count">0</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-activity">
+                <div class="activity-header">
+                    <h2>Recent Activity</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="activity-list" id="recent-activity">
+                    <!-- Activity items will be added dynamically -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
